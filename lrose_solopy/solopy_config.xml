@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PySoloConfiguration>
+  <!-- ncfile - the default window size -->
+  <window_size>
+    <width>800</width>
+    <height>700</height>
+  </window_size>
+
+  <!-- plot_mode - "BASIC" or "BSCAN" -->
+  <plot_mode mode="BASIC"></plot_mode> <!-- mode="BSCAN" or "BASIC" -->
+
+  <!-- ncfile - the default directory to look for .nc file to display -->
+  <data_dir dir="/home/vanandel/data/cfradial"></data_dir>
+
+  <!-- You can specify a directory containing colorscale/colormap files -->
+  <!-- otherwise the default directory in site-packages/PySolo/color_scales is used -->
+  <!-- <color_scales dir="/home/vanandel/color_scales"> -->
+  <color_scales> 
+    <dbz>dbz.hawkeye.colors</dbz>
+    <dbz_f>dbz.hawkeye.colors</dbz_f>
+    <vel>vel.colors</vel>
+    <width>width.colors</width>
+  </color_scales>
+
+  <!-- start-field - the variable will be display when solo is launched. The default is the first variable got from nc file. -->
+  <start_field name="VEL"></start_field>
+
+  <!-- headerLabel - will be displayed on top of the figure together with date and time -->
+  <header_label label="Label for data file:"></header_label>
+</PySoloConfiguration>

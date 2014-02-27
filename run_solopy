@@ -1,0 +1,21 @@
+#!/usr/bin/env python 
+##This will work in development on a relative folder basis
+##It will then work when installed in site-packages on a target system
+##where the runner script is in /usr/bin (or wherever)
+##
+##So, you don't need anything special - no fancy path tricks.
+import os
+# having LD_LIBRARY_PATH is NEVER a good idea, and can cause mismatches between the libraries provided by Anaconda or Enthought.
+#
+# For more info:
+#     Google "LD_LIBRARY_PATH considered harmful"
+#
+if os.environ.has_key('LD_LIBRARY_PATH'):
+    print "WARNING!!  LD_LIBRARY_PATH is set - attempting to ignore LD_LIBRARY_PATH"
+    print "Please Google  'LD_LIBRARY_PATH considered harmful'"
+    os.unsetenv('LD_LIBRARY_PATH')
+    del os.environ['LD_LIBRARY_PATH'] 
+
+import lrose_solopy.main
+
+lrose_solopy.main.start()

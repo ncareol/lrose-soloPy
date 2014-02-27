@@ -1,0 +1,21 @@
+# NAME vel.colors
+
+# fhage 	6/9/1993 12:19:36
+
+-26 	-21 	DarkMagenta
+-21 	-18 	maroon
+-18 	-15 	darkorchid
+-15 	-12 	blue
+-12 	-9 	royalblue
+-9 	-6 	deepskyblue
+-6 	-3 	mediumspringgreen
+-3 	-1 	forestgreen
+-1 	1 	gray
+1 	3 	SandyBrown
+3 	6 	Goldenrod
+6 	9 	yellow
+9 	12 	Salmon
+12 	15 	tomato
+15 	18 	Brown
+18 	21 	IndianRed
+21 	26 	firebrick

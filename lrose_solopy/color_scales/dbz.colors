@@ -1,0 +1,28 @@
+# NAME dbz.colors
+
+# fhage 	6/9/1993 11:56:22
+
+-30 	-20 	DarkGreen
+-20 	-10 	Darkolivegreen
+-10 	-5 	Forestgreen
+-5 	0 	SpringGreen3
+0 	3 	Mediumseagreen
+3 	6 	Mediumaquamarine
+6 	9 	Mediumslateblue
+9 	12 	blue
+12 	15 	MediumBlue
+15 	18 	DarkOrchid
+18 	21 	HotPink
+21 	24 	maroon
+24 	27 	VioletRed
+27 	31 	sienna
+31 	35 	chocolate
+35 	40 	goldenrod
+40 	45 	yellow
+45 	50 	Darksalmon
+50 	55 	salmon
+55 	60 	Firebrick
+60 	65 	DarkMagenta
+65 	70 	Lightgrey
+70 	80 	snow
+80	100	black

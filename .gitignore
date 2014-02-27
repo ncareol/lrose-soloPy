@@ -1,0 +1,9 @@
+*.pyc
+MANIFEST
+MANIFEST.in
+*.tar.gz
+*.wpr
+*.wpu
+build
+.DS_Store
+dist
