@@ -36,9 +36,9 @@ path:
 4) install the SoloPy package:
 
     python setup.py install
-    cd ~    # don't run start_pysolo from the distribution directory
+    cd ~    # don't run run_solopy from the distribution directory
 
-5) For first time users, run `start_pysolo` to create a default version of ~/solopy_config.xml.
+5) For first time users, execute `run_solopy` to create a default version of ~/solopy_config.xml.
 
 Edit the 'data_dir' parameter to set the default directory for data files
 
