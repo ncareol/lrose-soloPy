@@ -357,7 +357,8 @@ class MplCanvas(MyMplCanvas):#,gui.QWidget):#(MyMplCanvas):
         """ update figure - need to call it explicitly """
         if len(self.var_) > 0:
             self.axes.clear()
-
+            # avoid missing values of -32768
+            self.var_ = np.ma.array(self.var_, mask=(self.var_ < -32000))
             vmin = min(min(x) for x in self.var_)
             vmax = max(max(x) for x in self.var_)
 
