@@ -26,5 +26,5 @@
   <start_field name="VEL"></start_field>
 
   <!-- headerLabel - will be displayed on top of the figure together with date and time -->
-  <header_label label="Label for data file:"></header_label>
+  <header_label label="Date/Time:"></header_label>
 </PySoloConfiguration>
