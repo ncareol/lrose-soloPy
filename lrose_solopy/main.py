@@ -24,7 +24,7 @@ from ColorMap import ColorMap
 from Logger import Logger
 from utility import determine_pkg_path
 import argparse
-VERSION="SoloPy 0.5"
+VERSION="SoloPy 0.6"
 
 class DisplayParams:
     pass
@@ -545,6 +545,7 @@ def parse_arg():
     return config_file, dir_ncfile, dir_colorfile
 
 def main(argv):
+    print "starting {0}".format(VERSION)
     ## parse command line options
     config_file, data_dir, colormap_dir = parse_arg()
 

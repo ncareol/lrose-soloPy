@@ -6,7 +6,7 @@ from distutils.core import setup
 files = ["color_scales/*", "solopy_config.xml"]
 
 setup(name = "lrose_solopy",
-    version = "0.5",
+    version = "0.6",
     description = "Display CfRadial format radar/lidar file",
     author = "Xin Pan and Joe VanAndel",
     author_email = "vanandel@ucar.edu",
@@ -21,7 +21,7 @@ setup(name = "lrose_solopy",
     #This dict maps the package name =to=> directories
     #It says, package *needs* these files.
     package_data = {'lrose_solopy' : files },
-    #'start_pysolo' is in the root.
+    #'run_solopy' is in the root.
     scripts = ["run_solopy"],
     long_description = """Really long text here."""
     #
