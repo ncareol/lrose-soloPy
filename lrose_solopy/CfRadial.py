@@ -85,8 +85,13 @@ class CfRadial:
             return self.BASICMODE
 
     def getTimeLabel(self):
-        label = ''.join(self.ncfile.variables['time_coverage_start'][:])
-        label = label + " - " + ''.join(self.ncfile.variables['time_coverage_end'][:])
+        start = self.ncfile.variables['time_coverage_start'][:]
+        end = self.ncfile.variables['time_coverage_end'][:]
+        if type(start) == ma.core.MaskedArray :
+            start = start.data
+            end = end.data
+        label = ''.join(start)
+        label = label + " - " + ''.join(end)
         return label
 
     def retrieveData(self, var_list) :
